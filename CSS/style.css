@@ -1,0 +1,174 @@
+
+.header{
+	width: 200px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 15px;
+}
+
+.nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #666666;
+	
+}
+
+.nav li {
+	float: left;
+	padding-left: 5px;
+	padding-right: 90px;
+}
+
+.nav a{
+	padding: 14px 16px;
+	display: block;
+	font-family: Tahoma;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+
+}
+
+.nav a:hover{
+	background-color: #333333;
+
+}
+
+.sidepanel{
+	float: left;
+	margin-top: 34px;
+	
+}
+
+.sidepanel ul{
+	list-style-type: none;
+	padding: 0px;
+	overflow: hidden;
+	background-color: #ffffff;
+	
+}
+
+.sidepanel li{
+	display: block;
+	text-align: left;
+
+}
+
+.sidepanel li a{
+	display: block;
+	border-style: solid;
+	border-color: #cccccc;
+	border-width: 1px;
+	padding-top: 20px;
+	padding-left: 15px;
+	padding-bottom: 20px;
+	text-decoration: none;
+	height: 20px;
+	width: 300px;
+	font-family: Tahoma;
+	font-weight: bold;
+	font-size: 12px;
+	color: #666666;
+
+	
+
+}
+
+.sidepanel li a:hover{
+	background-color: #b8b8b8;
+	padding-left: 25px;
+	width: 290px;
+}
+
+#container-row{
+	overflow: hidden;
+	float: right;
+	position: relative;
+	margin-top: 40px;
+	margin-right: 50px;
+}
+
+#section{
+	float: right;
+	margin: 15px 35px;
+	height: 150px;
+	width: 845px;
+
+
+}
+
+#section p{
+	font-family: Tahoma;
+	font-size: 12px;
+	color: #666666;
+	text-align: left;
+}
+
+
+#bikepic img{
+	float: right;
+	margin: 10px 10px;
+	padding: 45px;
+	border-width: 1px;
+	border-color: #cccccc;
+	border-style: solid;
+	height: 400px;
+	width: 800px;
+
+
+}
+
+.footer{
+	position: relative;
+	top: 1pxs;
+	clear: both;
+
+}
+
+
+.footer ul{
+	list-style-type: none;
+	margin: none;
+	padding: 0;
+	overflow: hidden;
+	background-color: #cccccc;
+	clear: both;
+
+
+}
+
+
+.footer li{
+	float: left;
+	padding-left:5px;
+	padding-right: 50px;
+
+}
+
+.footer li a{
+	display: block;
+	color: #666666;
+	text-align: center;
+	font-family: Tahoma;
+	padding: 12px 14px;
+	text-decoration: none;
+
+}
+
+#legal{
+	display: block;
+	float: right;
+	text-align: center;
+	font-family: Tahoma;
+	color: #666666;
+	margin-right: 20px;
+	padding: 12px 14px;
+	text-decoration: none;
+
+}
+
+.footer li a:hover{
+	text-decoration: underline;
+}
