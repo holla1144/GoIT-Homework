@@ -18,9 +18,9 @@
 
 	<nav>
 		<ul>
-			<li><a href="#">Ola! Entrar ou Cadastre-se</a></li>
+			<li id="Ola"><a href="#">Ola! <span class="underline">Entrar</span> ou <span class="underline">Cadastre-se</span></a></li>
 			<li id="Minhas">
-				<img src="IMG/flag.jpg">
+				<img src="IMG/flag.jpg" alt="little flag">
 				<a href="#">Minhas Ofertas</a></li>
 			<li><a href="#">Ajuda</a></li>
 			<li><a href="#">Contato</a></li>
@@ -44,18 +44,25 @@
 
 
 
+<!--form header-->
 
-
+<div id="formHeader">
+	<p>Cadastre-se</p>
+</div>
 
 
 <!--Facebook Button-->
 
+<button type="button" id="fb"></button>
 
-
-
-
-
-
+<!--bridge-->
+<div id="bridge">
+	<ul>
+		<li><hr></li>
+		<li id="ou">Ou</li>
+		<li><hr></li>
+	</ul>
+</div>
 
 
 <!--Sign Up Form--> 
@@ -64,7 +71,7 @@
 	<input type=text id="lastname" placeholder="Last Name"><br>
 	<input type=text id="Email" placeholder="Email Address"><br>
 	<input type=password id="password" placeholder="Choose Password"><br>
-	<input type=password id="confirm password" placeholder="Confirm Password"><br>
+	<input type=password id="confirmpassword" placeholder="Confirm Password"><br>
 	<input type=checkbox id="updates"><span>Send me Youbike updates and tips</span><br>
 	<input type=submit value="Create my Account">
 </form>
