@@ -1,0 +1,34 @@
+body{
+	width: 1000px;
+	height: 1000px;
+
+}
+
+table{
+	width: 100%;
+	height: 100%;
+}
+table, tr, td{
+	border: 4px solid black;
+	border-collapse: collapse;
+}
+
+tr#one{
+	height: 50px;
+}
+
+td.skinny{
+	width: 75px;
+}
+
+td.long{
+	width:100px;
+}
+
+td#nobottom{
+	border-bottom: none;
+}
+
+td#topless{
+	border-top: none;
+}
