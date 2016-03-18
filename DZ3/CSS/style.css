@@ -1,75 +1,93 @@
-
-.header{
-	width: 200px;
-	margin-top: 15px;
-	margin-bottom: 15px;
-	margin-left: 15px;
+/*Base classes*/
+.navigation {
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
-
-.nav ul{
-	list-style-type: none;
-	margin-left: 10px;
-	margin-right: 10px;
-	padding: 0px;
-	overflow: hidden;
-	background-color: #666666;
-	
+.navigation a {
+	text-decoration: none;
 }
-
-.nav li {
+.f_left {
 	float: left;
-	padding-left: 5px;
-	padding-right: 90px;
+}
+.f_right {
+	float: right;
+}
+.clearfix:after {
+	height: 0;
+	width: 100%;
+	clear: both;
+	content: '';
+	display: block;
+}
+img {
+	max-width: 100%;
+}
+/*END Base classes*/
+body {
+	font: 400 12px/1.3em Tahoma, Geneva, Kalimati, sans-serif;
+}
+#wrapper {
+	width: 970px;
+	padding: 0 45px;
+	margin: 0 auto;
+	box-shadow: 0 0 10px #000;
 }
 
-.nav a{
-	padding: 14px 16px;
+
+/*HEADER*/
+.header {
+	padding-top: 20px;
+}
+.nav {
+	padding-top: 50px;
+}
+.nav ul{
+	background-color: #666666;
+}
+
+.nav a {
+	padding: 14px 30px;
 	display: block;
-	font-family: Tahoma, Geneva, Kalimati, sans-serif;
 	color: white;
 	text-align: center;
-	text-decoration: none;
-
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	font-size: 16px;
 }
 
 .nav a:hover{
 	background-color: #333333;
+	border-color: #fff;
+}
+/*END_HEADER*/
 
+/*CONTENT*/
+.main-wrapper {
+	padding: 30px 0;
+}
+.main-content {
+	width: 65%;
 }
 
-.sidepanel{
-	float: left;
-	margin-top: 34px;
-	margin-left: 10px;
-	
+.left-column {
+	width: 30%;
 }
+.aside-item {
 
-.sidepanel ul{
-	list-style-type: none;
-	padding: 0px;
-	overflow: hidden;
-	background-color: #ffffff;
-	
 }
-
-.sidepanel li{
+.sidepanel li {
+	border: 1px solid #ccc;
+	border-top: none;
+}
+.sidepanel li:first-child {
+	border-top: 1px solid #ccc;
+}
+.sidepanel li a {
 	display: block;
-	text-align: left;
-
-}
-
-.sidepanel li a{
-	display: block;
-	border-style: solid;
-	border-color: #cccccc;
-	border-width: 1px;
 	padding-top: 20px;
 	padding-left: 15px;
 	padding-bottom: 20px;
-	text-decoration: none;
-	height: 20px;
-	width: 300px;
-	font-family: Tahoma, Geneva, Kalimati, sans-serif;
 	font-weight: bold;
 	font-size: 12px;
 	color: #666666;
@@ -81,45 +99,15 @@
 .sidepanel li a:hover{
 	background-color: #b8b8b8;
 	padding-left: 25px;
-	width: 290px;
 }
 
-#container-row{
-	overflow: hidden;
-	float: right;
-	position: relative;
-	margin-top: 40px;
-	margin-right: 20px;
-}
-
-#section{
-	float: right;
-	margin: 15px 10px;
-	height: 150px;
-	width: 845px;
-
-
-}
-
-#section p{
-	font-family: Tahoma, Geneva, Kalimati, sans-serif;
-	font-size: 12px;
+.main-content p{
 	color: #666666;
-	text-align: left;
+	padding-left: 50px;
 }
 
-
-#bikepic img{
-	float: right;
-	margin: 10px 0px;
-	padding: 45px;
-	border-width: 1px;
-	border-color: #cccccc;
-	border-style: solid;
-	height: 400px;
-	width: 800px;
-
-
+#bikepic {
+	border: 1px solid #ccc;
 }
 
 .footer{
@@ -155,17 +143,13 @@
 	display: block;
 	color: #666666;
 	text-align: center;
-	font-family: Tahoma, Geneva, Kalimati, sans-serif;
 	padding: 12px 14px;
-	text-decoration: none;
-
 }
 
 #legal{
 	display: block;
 	float: right;
 	text-align: center;
-	font-family: Tahoma, Geneva, Kalimati, sans-serif;
 	color: #666666;
 	margin-right: 20px;
 	padding: 12px 14px;
