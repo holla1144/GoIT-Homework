@@ -23,6 +23,13 @@
 img {
 	max-width: 100%;
 }
+
+.footer_text {
+	color: #666666;
+	display: block;
+	padding: 14px 30px;
+
+}
 /*END Base classes*/
 body {
 	font: 400 12px/1.3em Tahoma, Geneva, Kalimati, sans-serif;
@@ -111,10 +118,6 @@ body {
 }
 
 .footer{
-	position: relative;
-	margin-left: 10px;
-	margin-right: 10px;
-	top: 1px;
 	clear: both;
 
 }
@@ -122,41 +125,25 @@ body {
 
 .footer ul{
 	list-style-type: none;
-	margin: 0px;
-	padding: 0px;
 	overflow: hidden;
 	background-color: #cccccc;
-	clear: both;
-
 
 }
 
 
 .footer li{
 	float: left;
-	padding-left:5px;
-	padding-right: 50px;
+
 
 }
 
-.footer li a{
-	display: block;
-	color: #666666;
-	text-align: center;
-	padding: 12px 14px;
-}
-
-#legal{
-	display: block;
-	float: right;
-	text-align: center;
-	color: #666666;
-	margin-right: 20px;
-	padding: 12px 14px;
-	text-decoration: none;
-
-}
-
-.footer li a:hover{
+footer li a:hover{
 	text-decoration: underline;
 }
+
+
+#legal{
+	float: right;
+	padding-right: 15px;
+}
+
