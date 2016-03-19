@@ -1,4 +1,6 @@
-/* base classes */
+
+
+/*base classes*/
 
 .background_white {
 	background: white;
@@ -63,7 +65,7 @@ body {
 	margin-top: -10px;
 }
 
-/* End Body and Wrapper */
+/*End Body and Wrapper*/
 
 
 /* HEADER */
@@ -114,8 +116,9 @@ body {
 	table-layout: fixed;
 	margin: 0px;
 }
+
 .topnav li {
-	{ display: table-cell; text-align: center; }
+	display: table-cell; text-align: center; 
 
 
 }
@@ -279,5 +282,4 @@ footer p {
 	
 }
 
-</div>
-</body>
+
