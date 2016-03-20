@@ -1,44 +1,100 @@
+/* BASE CLASSES */
+
+
+
+#wrapper {
+	width: 908px;
+	margin: 0px auto;
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+    float: right;
+}
+
+
+.clearfix:after {
+	visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+     
+}
+
+.standard_list ul {
+    display: block;
+    list-style-type: none;
+
+}
+
+.standard_list li {
+    display: block;
+    float: left;
+
+}
+
+.standard_list a {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+    text-decoration: none;
+
+}
+.font {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+}
 
 p {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+
+}
+/* END BASE CLASSES */
+
+/* HEADER */
+
+
+.hat {
+	overflow: hidden;
+	margin: 2px 0px 8px;
+}
+
+
+#phoneicon {
+	margin: 3px 0px 0px 5px;
+}
+
+.header_text p {
+    font-size: 17px;
+    margin: 1px 4px 0px 3px;
+
+
+}
+
+
+#personicon {
+	position: relative;
+    width: 18px;
+    margin-left: 4px;
+}
+
+.no_style {
+	background:transparent;
+	border:none;
+	color: white;
+	font-size:10px;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
-	font-size: 13px;
 }
-
-body {
-	width: 100%;
-	height: 1310px;
-}
-/* Header */
-header {
-    display: inline-block;
-    left: 48px;
-    position: relative;
-    margin-bottom: 9px;
-    margin-top: 6px;
-	}
-
-header img#phone {
-	border: 0;
-    height: 25px;
-    top: 4px;
-    position: relative;
-}
-
-/* PhoneNumber */
-header p{
-    display: inline-block;
-    width: 377px;
-    height: 18px;
-    padding: 0px;
-    color: blue;
-    margin: 0px;
-    font-size: 22px;
-}
-
 
 /* Login */ 
 
-header div {
+header p {
+	font-size: 14px;
+}
+
+header div#login {
 	display: inline;
 	background: rgb(17, 66, 102); /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(rgb(31, 102, 133), rgb(17, 66, 102)); /* For Safari 5.1 to 6.0 */
@@ -46,512 +102,592 @@ header div {
     background: -moz-linear-gradient(rgb(31, 102, 133), rgb(17, 66, 102)); /* For Firefox 3.6 to 15 */
     background: linear-gradient(rgb(31, 102, 133), rgb(17, 66, 102)); /* Standard syntax */
     position: absolute;
-    width: 728px;
-    height: 30px;
-    border-radius: 10px;
+    margin: 1px 0px 0px 4px;
+    width: 37%;
+    border-radius: 2px;
     box-shadow: 3px 3px rgb(215, 215, 215);
 
 }
 
-header div img {
- 	border: 0;
-    float: left;
-    margin-left: 3px;
-    height: 86%;
-    position: relative;
-    top: 2px;
-}
-
 header form {
 	display: inline-block;
-    position: relative;
-    top: 3px;
+	padding: 2px;
 
 }
 
-header input[type=submit] {
-	background-color: rgba(17, 66, 102, 0) ;
+input[type=text], input[type=password] {
+    width: 110px;
+    height: 12px;
+
+}
+
+
+input[type=sub] {
+	background-color: black;
 	border: none;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
 	color: white; 
-	font-size: 13px;
-	padding: 0px;
-    margin-right: -10px;
 
 }
 
-header list {
-	position: absolute;
-	top: -10px;
+
+.reg_pas {
+    margin:0px;
+    padding: 3px 0px 0px 0px;
 }
 
-header ul {
-	display: inline-block;
-    list-style-type: none;
-    margin-left: -36px;
-    overflow: hidden;
+.reg_pas li {
+	padding-left: 1px;
 }
-
-header li{
-	float: left;
-	display:block;
-    padding-left: 10px;
-}
-header li a{
+.reg_pas li a{
 	border-left: 1px solid white;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
 	color: white; 
 	text-decoration: none;
-	font-size:13px;
-	padding-left: 3px;
+	font-size:10px;
+	padding-left: 5px;
 }
-li a#forgot{
-	font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+.reg_pas li a#forgot{
 	color: rgb(191, 191, 191); 
-	font-size:13px;
-	border: none;
 	text-decoration: underline;
+	border-left: none;
 }
 /* Contact Button */
 
 header button[type=submit]{
-    position: relative;
-    left: 743px;
-    height: 25px;
-    width: 90px;
+    height: 22px;
+    width: 76px;
     background-image: url("../IMG/contacticon.jpg");
-    background-size:cover;
+    background-size: cover;
     border-radius: 10px;
-
+    float: right;
+    margin: 0px 5px 0px 0px
 }
 
 /* BigPicture */
 
 figure {
-	background-image: url("../IMG/figure1.jpg");
-    background-size: cover;
-    margin: auto;
-    width: 94%;
-    height: 326px
+	margin: 0px auto;
 }
 
 
 /* Nav */ 
-nav {
+.mainnav {
+    margin: 0px auto;
     background: rgba(76,76,76,1);
-	background: -moz-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(102,102,102,1) 11%, rgba(89,89,89,1) 12%, rgba(71,71,71,1) 18%, rgba(44,44,44,1) 26%, rgba(0,0,0,1) 47%, rgba(17,17,17,1) 72%, rgba(17,17,17,1) 78%, rgba(19,19,19,1) 100%);
-	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(76,76,76,1)), color-stop(11%, rgba(102,102,102,1)), color-stop(12%, rgba(89,89,89,1)), color-stop(18%, rgba(71,71,71,1)), color-stop(26%, rgba(44,44,44,1)), color-stop(47%, rgba(0,0,0,1)), color-stop(72%, rgba(17,17,17,1)), color-stop(78%, rgba(17,17,17,1)), color-stop(100%, rgba(19,19,19,1)));
-	background: -webkit-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(102,102,102,1) 11%, rgba(89,89,89,1) 12%, rgba(71,71,71,1) 18%, rgba(44,44,44,1) 26%, rgba(0,0,0,1) 47%, rgba(17,17,17,1) 72%, rgba(17,17,17,1) 78%, rgba(19,19,19,1) 100%);
-	background: -o-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(102,102,102,1) 11%, rgba(89,89,89,1) 12%, rgba(71,71,71,1) 18%, rgba(44,44,44,1) 26%, rgba(0,0,0,1) 47%, rgba(17,17,17,1) 72%, rgba(17,17,17,1) 78%, rgba(19,19,19,1) 100%);
-	background: -ms-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(102,102,102,1) 11%, rgba(89,89,89,1) 12%, rgba(71,71,71,1) 18%, rgba(44,44,44,1) 26%, rgba(0,0,0,1) 47%, rgba(17,17,17,1) 72%, rgba(17,17,17,1) 78%, rgba(19,19,19,1) 100%);
-	background: linear-gradient(to bottom, rgba(76,76,76,1) 0%, rgba(102,102,102,1) 11%, rgba(89,89,89,1) 12%, rgba(71,71,71,1) 18%, rgba(44,44,44,1) 26%, rgba(0,0,0,1) 47%, rgba(17,17,17,1) 72%, rgba(17,17,17,1) 78%, rgba(19,19,19,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313', GradientType=0 );
-    width: 1254px;
-    margin-top: 6px;
-    margin-left: 40px;
-    margin-right: auto;
+    background: -moz-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(102,102,102,1) 11%, rgba(89,89,89,1) 12%, rgba(71,71,71,1) 18%, rgba(44,44,44,1) 26%, rgba(0,0,0,1) 47%, rgba(17,17,17,1) 72%, rgba(17,17,17,1) 78%, rgba(19,19,19,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(76,76,76,1)), color-stop(11%, rgba(102,102,102,1)), color-stop(12%, rgba(89,89,89,1)), color-stop(18%, rgba(71,71,71,1)), color-stop(26%, rgba(44,44,44,1)), color-stop(47%, rgba(0,0,0,1)), color-stop(72%, rgba(17,17,17,1)), color-stop(78%, rgba(17,17,17,1)), color-stop(100%, rgba(19,19,19,1)));
+    background: -webkit-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(102,102,102,1) 11%, rgba(89,89,89,1) 12%, rgba(71,71,71,1) 18%, rgba(44,44,44,1) 26%, rgba(0,0,0,1) 47%, rgba(17,17,17,1) 72%, rgba(17,17,17,1) 78%, rgba(19,19,19,1) 100%);
+    background: -o-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(102,102,102,1) 11%, rgba(89,89,89,1) 12%, rgba(71,71,71,1) 18%, rgba(44,44,44,1) 26%, rgba(0,0,0,1) 47%, rgba(17,17,17,1) 72%, rgba(17,17,17,1) 78%, rgba(19,19,19,1) 100%);
+    background: -ms-linear-gradient(top, rgba(76,76,76,1) 0%, rgba(102,102,102,1) 11%, rgba(89,89,89,1) 12%, rgba(71,71,71,1) 18%, rgba(44,44,44,1) 26%, rgba(0,0,0,1) 47%, rgba(17,17,17,1) 72%, rgba(17,17,17,1) 78%, rgba(19,19,19,1) 100%);
+    background: linear-gradient(to bottom, rgba(76,76,76,1) 0%, rgba(102,102,102,1) 11%, rgba(89,89,89,1) 12%, rgba(71,71,71,1) 18%, rgba(44,44,44,1) 26%, rgba(0,0,0,1) 47%, rgba(17,17,17,1) 72%, rgba(17,17,17,1) 78%, rgba(19,19,19,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313', GradientType=0 );
 
 }
 
-nav list {
-	position: absolute;
-}
 
-nav ul {
-	display: inline-block;
-    list-style-type: none;
-    margin-left: 110px;
+.mainnav ul {
     overflow: hidden;
+    margin: 0px 0px 0px 130px;
+    padding:7px 0px;
+
 }
 
-nav li{
-	float: left;
+.mainnav li{
     display: block;
 }
 
-nav ul li a {
-	display: block;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
-	color: rgb(130, 138, 141);
-	font-size: 18px;
-	text-decoration: none;
-	padding: 1px 30px;
-    border: 1px;
+.mainnav li a {
+
+	font-size: 14px;
+    color: rgb(177, 188, 192);    
+    border: 1px
     border-radius: 10px;
+    text-align: center;
+    padding: 0px 20px;
 }
 
-nav a:hover{
+.mainnav a:hover{
 	background-color: rgb(28, 94, 126);
 	color: white;
 	border-radius: 10px;
 }
 
-nav li span#items {
-	font-size:12px;
-	color: white;
-	margin-left: 8px;
+#shopping_cart {
+    margin-left: 12px;
 }
-nav li span#pic {
+
+.mainnav li span.items {
+	font-size:10px;
+	color: white;
+    padding-left:45px;
+    padding-top:5px;
+	margin-left: 42px;
+    background-image: url("../img/shoppingcart.jpg");
+    background-size: initial;
+    background-repeat-x: no-repeat;
+    background-position: left;
+}
+
+.mainnav li span.items2 {
+    color:white;
+    font-size: 10px;
+    margin-left: 53px;
+}
+ li span#pic {
 	margin-left: 57px;
 }
-nav li span#count {
+nav li span.count {
 	font-size: 12px;
 	color: rgb(13, 90,143);
 }
+
+
+
 nav div#shoppingCart {
 	display: inline-block;
     margin-top: 16px;
     position: absolute;
 }
 
+/* END HEADER */
 
-/* floatbox general*/ 
-.floatbox{
-	float: left;
-	display: inline-block;
-    width: 150px;
-    height: 125px;
-    margin: 9px;
-    border: 1px solid gray; 
-    border-radius:13px;
-    box-shadow: 3px 3px 3px gray;
+/* FLOATING BOXES BEGIN */
+
+.wrapper {
+    margin: 0px auto;
+    overflow: hidden;
 }
+
+.floatbox{
+	display: inline-block;
+    border-radius: 18px;
+    border: 1px solid rgb(203, 203, 203);
+    box-shadow: 4px 4px 4px rgb(203, 203, 203);
+}
+
+
 
 /*floatbox 1*/
 
-.floatbox#one{
-	width: 44%;
-    position: relative;
-    left: 31px;
+.one{
+	width: 45%;
+    margin: 9px 4px;
 
 }
 
-.floatbox h5 {
-	font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
-	color: rgb(28, 94, 126);
+.floatbox p {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
+    color: rgb(21, 68, 104);
+
 }
-
-
-div#text1{
-    width: 75px;
-    display: inline-block;
+.one header {
+    display: inline;
     position: absolute;
-    left: 351px;
-    top: 20px;
+    width: 30%;
 }
 
-div #text2{
-	height: 85%;
-    width: 24%;
+.one #head_text {
+    margin:0px;
+    text-align: center;
+    font-size: 12px;
+
+}
+
+.one #tires {
+    float: right;
+    margin: -12px 16px 0px 0px;
+    font-size: 10px;
+}
+
+.one #discs {
     float: left;
-}
-
-.floatbox#one #form1{
-    width: 75px;
-    display: inline-block;
-    position: relative;
-    left: 294px;
-
-}
-
-.floatbox#one #form2 {
-    width: 75px;
-    display: inline-block;
-    position: absolute;
-    left: 90px;
-}
-
-.floatbox#one h5{
-	text-align: center;
-    margin: 0px;
-}
-
-.floatbox#one p{
-	margin: 0px;
-	top: 0px;
+    margin: -10px 0px 0px 22px;
+    font-size: 10px;
 }
 
 
-.floatbox#one #discs{
-	left: 9px;
-	position: absolute;
-	color: rgb(28, 94, 126);
-}
-
-.floatbox#one #tires{
-	right: 15px;
-	position: absolute;
-	color: rgb(28, 94, 126);
-}
-
-.floatbox#one button{
-	background: none;
-    border: none;
-    color: blue;
-    text-decoration:underline;
-    position: relative;
-    left: 290px;
-    top: 16px;
-}
-
-
-
-/* TireSearch[floatbox2] */
-.floatbox#two{
-    width: 21%;
-    position: relative;
-    left: 23px;
-}
-
-.floatbox#two h5 {
-	margin: 0px;
-    position: relative;
-    left: 8px;
-}
-
-.floatbox#two p {
-	margin: 0px;
-	top: 0px;
-
-}
-.floatbox#two #text1{
-	position: relative;
-    width: 100px;
-    height: 100px;
-    left: -44px;
-    top: 4px;
+/* This is the standard set of attributes for labels */
+.stan_label { 
     text-align: right;
+    display: inline-block;
+    width: 100px;
+    font-size: 10px;
+    color: black;
+}
+
+.one select {
+    width: 100px;
+    height: 18px;
+    margin-left: 28px;
+}
+
+#form1 {
+    padding-top: 23px;
+    margin-left: -44px;
+}
+
+.form_wrap {
+    width: 200px;
+    overflow:hidden;
+    float:left;
+
+}
+.small_let {
+    font-size:6px;
+    color:gray;
+}
+
+#form2 {
+    margin-left: -37px;
+    padding-top: 23px;
+    padding-bottom: 8px;
+}
+
+#form2 select {
+    width: 100px;
+}
+/* TireSearch[floatbox2] */
+.two{
+    width: 21%;
+    margin: 11px 13px;
+   
+}
+
+.two header p {
+    font-size: 12px;
+    margin: 0px 0px 0px 10px;
 
 }
 
-.floatbox#two #size{
-    position: absolute;
-    top: 25px;
-    left: 58px;
-}
-.floatbox#two #size2{
-	position: absolute;
-    left: 58px;
-    top: 47px;
+#size_wrap {
+    overflow: hidden;
+    width: 100%;
 }
 
-.floatbox#two #seasons {
-	position: absolute;
-    left: 58px;
-    top: 70px;
-    font-size: 11px;
+.two form {
+    margin: 3px 0px 0px -47px;
 }
 
-.floatbox#two #form4{
-    width: 9px;
-    height: 100px;
-    left: 123px;
-    top: 23px;
-    position: absolute;
-
+form #size {
+    margin-left: 20px;
+    margin-top: 5px;
 }
 
-.floatbox#two #form4 p{
-	font-weight: bold;
-    font-size: 16px;
-
+#size p {
+    display: inline;
 }
 
-.floatbox#two #size3 {
-	left: 138px;
-    position: absolute;
-    top: 25px;
+#size select {
+    margin-top: 2px;
+    height: 18px;
+    width: 50px;
+    font-size: 12px;
+}
+#r_and_seasons {
+    margin-top: 7px;
+    padding-bottom: 10px;
 }
 
-.floatbox#two button{
-	background: none;
-    border: none;
-    color: blue;
-    text-decoration: underline;
-    position: absolute;
-    right: 20px;
-    top: 104px;
 
+#r select {
+    height: 16px;
+    width: 45px;
+    font-size: 12px;
+}
+#season {
+    margin: 0px 0px 0px -48px;
+}
+
+#summer {
+    margin-left: -50px;
+}
+
+#winter {
+    margin-left: 45px;
+}
+
+#allseason {
+    margin-left: 67px;
+}
+
+#season input[type="checkbox"] {
+    height: 10px;
+    width: 10px;
+    padding: none;
+}
+
+#special_button {
+    margin-top: -27px;
 }
 /* Disc Search[floatbox3] */
-.floatbox#three {
-	position: relative;
-    right: -13px;
-    width: 342px;
+.three {
+    width: 29%;
+    margin: 12px 0px 0px -2px;
+	
 }
 
-.floatbox#three h5 {
-	margin: 0px;
-    position: relative;
-    left: 8px;
+#DCO {
+    overflow: hidden;
+    padding-bottom: 8px;
+}
+
+.three header p {
+    font-size: 12px;
+    margin: 0px 0px 0px 10px;
+}
+#disc_search {
+    overflow: hidden;
+    width: 65%;
+    margin-top: 2px;
+    border-right: 1px solid rgb(189, 198, 202)
+}
+
+select[name="num_support_holes"] {
+    margin-top: 13px;
+    width: 50px;
+}
+
+select[name="diam_support_holes"] {
+    margin-top: 15px;
+}
+
+#diameter {
+    margin-left: -28px;
 
 }
 
-.floatbox#three #text1 {
-    width: 100px;
-    height: 100px;
-    left: 14px;
-    text-align: left;
-    top: 19px;
-    position: absolute;
+.disc_search_box {
+    width: 55px;
+    height: 18px;
+    margin-left: 29px;
+    font-size: 10px;
 }
 
-.floatbox#three #text1 p {
-	margin: -5px;
-    padding: 0px;
-}
-
-.floatbox#three #text1 p span{
-	font-size: 10px;
-	margin:0px;
-	padding:0px;
-	color: gray;
-}
-
-.floatbox#three #diameter select {
-	margin-bottom: 20px;
-}
-
-.floatbox#three #form1 {
-    position: absolute;
-    left: 112px;
-    top: 17px;
-}
-
-.floatbox#three #text2 {
-	width: 100px;
-    height: 100px;
-    left: 188px;
+#dco_head {
+    margin: 3px 0px 0px -30px;
     text-align: center;
-    position:relative;
-    top: -8px;
-
-}
-.floatbox#three #text2 p {
-	margin: -5px;
-    padding: 0px;
 }
 
-.floatbox#three #text2 p span{
-	font-size: 10px;
-	margin:0px;
-	padding:0px;
-	color: gray;
+#dco_select {
+    margin: 2px 0px 0px 11px;
+
 }
 
-.floatbox#three img{
-	position: absolute;
-    left: 178px;
-    top: 4px;
+.dco_box {
+    height: 19px;
+    width: 61px;
+    font-size: 12px;
+
 }
 
-.floatbox#three button{
-	background: none;
+#et_head {
+    text-align: center;
+    margin: 3px 0px 0px -33px;
+}
+
+#disk_crash_select {
+    margin-left: 11px;
+}
+
+button[value="search"] {
+    float: right;
+    text-decoration: underline;
     border: none;
-    color: blue;
-    text-decoration:underline;
-    position: relative;
-    left: 170px;
-    top: 84px;
+    background: none;
+    font-size: 14px;
+    color: rgb(21, 68, 103);
+    padding-right: 13px;
+    margin-top: -10px;
+    padding-bottom: 10px;
+}
 
+/* END OF FLOATING BOXES */
 
+#asides_and_main {
+    overflow: hidden;
+    margin: 0px auto;
 
 }
 /* SectionCatalogProducts[Aside] */
 
 aside{
-	width: 200px;
-	height: 450px;
+	width: 18%;
 
 }
-
-aside h6{
-	font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
-	color: rgb(17, 65, 101);
-	font-size: 15px;
-    width: 190px;
-    height: 30px;
-    padding-left: 35px;
-    padding-top: 7px;
-    border: 1px solid black;
-    left: 20px;
+.head_class h6{
+    font-size: 14px;
+    color: rgb(12, 50, 86);
+    border: 1px solid rgb(12, 50, 86) ;
+    padding: 5px 4px 5px 33px;
     border-radius: 15px;
-    margin:0px;
-
-}
-aside#left{
-	float:left;
-	position: relative;
-    margin-left: 43px;
-    width: 30%;
-
-}
-
-aside list{
-	position: relative;
-	top: 0px;
-
+    margin: 0px;
+    height: 17px;
+    width: 112px;
+    background-image: url("../IMG/circleicon.jpg");
+    background-position: left;
+    background-position-x: 5px;
+    background-position-y: 2px;
+    background-repeat: no-repeat;
 }
 
-aside list ul {
-	list-style-type: circle;
+#catalog {
+    background-image: url("../IMG/documenticon.jpg");
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    width: 143px;
+}   
+
+#tires {
+    margin-top: 8px;
 
 
 }
 
-aside list li {
-	
+#discs {
+    margin-top: 11px;
+
 }
-aside list li a {
+
+#bolts {
+    margin-top: 2px;
+}
+#left_aside ul {
+    list-style-type: circle;
+    margin: 0px;
+
+}
+
+
+#left_aside li a {
 	text-decoration: none;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif; 
 	font-size: 15px;
-	color: rgb(17, 65, 101);
+	color: rgb(12, 50, 86);
 }
 
-aside list li a:hover{
+#left_aside li a:hover{
 	font-style: italic;
 	text-decoration: underline;
 }
 
-aside img{
-	position: relative;
-	top: 35px;
-	left: 8px;
-}
+
 /* SectionBrands[Aside] */
-aside#right {
-	float: right;
-    margin-right: 80px;
-    position: relative;
+#right_aside {
+	font-size: 15px;
+    color: rgb(12, 50, 86);
 
 }
 
-/* <SectionTires[Main] */
+#brands {
+    background-image:url("../IMG/documenticon.jpg");
+    margin: 7px 0px 0px -20px;
+    width: 143px;
+}
+
+#right_tires {
+    margin: 12px 0px 0px -4px;
+    width: 99px
+}
+
+#tires_form {
+    margin: 5px 0px 0px 7px;
+}
+
+#right_discs {
+    margin: 12px 0px 0px -6px;
+    width: 100px;
+}
+
+#discs_form {
+    margin: 9px 0px 0px 5px;
+}
+
+#right_button {
+    color: white;
+    border-radius: 15px;
+    background-color: rgb(12, 50, 86);
+    border: none;
+    margin: 16px 0px 0px 5px;
+    width: 80px;
+
+}
+
+/* END OF ASIDES */
+
+/* MAIND SECTION */
 main {
-    height: 600px;
-    position: relative;
-    left: 286px;
-    width: 57%;
-    top: 173px;
+    float: left;
+    width: 58%;
     background-image: url("../IMG/main.jpg");
-    background-size: cover;
+    margin: 4px 25px
+
 }
 
+#float_boxes {
+    overflow: hidden;
+    margin: -6px 11px 30px 0px;
+}
+.fig {
+    float: left;
+    display: inline;
+    width: 26%;
+    margin: 14px 4px 0px 26px;
+    color: rgb(17, 65, 101);
+
+}
+.fig img {
+    border: 1px solid rgb(167, 177, 180);
+    border-radius: 6px
+}
+.fig h5 {
+    font-size: 14px;
+    text-align: center;
+    margin: 0px;
+}
+
+.fig p {
+    color: black;
+    font-size: 13px;
+    margin: -5px 0px 0px 0px;
+    text-align: center;
+}
+
+.figcap {
+    font-family: arial;
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(17, 65, 101);
+    text-align: center;
+    margin: 0px;
+}
 
 /* BrandLogoes[Figure] */
 .logos{
-    position: relative;
-    height: 54px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1025px;
-    top: 210px;
+    margin: 24px 0px 22px 110px;
+    width: 88%;
+    height: 38px;
     background-image: url("../IMG/brands.jpg");
-    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
+.logos ul {
+    margin: 0px 234px;
+    padding-top: 12px;
 
+}
+
+.logos a {
+    font-size: 10px;
+    color: black;
+}
+
+.custom_a {
+    padding-right: 8px;
+}
+.logos a:hover {
+    color: rgba(118, 154, 173, .5);
+    text-decoration: underline;
+}
 /* Footer */
 
 footer {
@@ -559,49 +695,24 @@ footer {
 	border: 1px solid black;
 	background-color: rgb(17, 65, 101);
 	margin: auto;
-    width: 94%;
-    position: relative;
-    top: 250px;
+
+	
 }
 
-footer list{
-    position: absolute;
-    left: 42%;
-    top: 3px;
-    margin: 0px;
-    padding: 0px;
-
-}
 
 footer ul {
-    list-style-type: none;
-    height: 19px;
-    text-align: center;
-    overflow: hidden;
-    padding: 0px;
-    margin: 0px;
+    margin: 10px 268px 0px;
+
 }
 
-footer li {
-    display: block;
-    float: left;
-	
-
-
-	
-}
 
 footer li a {
 	display: block;
-	font-family:"Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif; 
 	color: white; 
-	padding: 10px;
-	font-size: 10px;
-	text-decoration: none;
-	text-align: center;
-    position: relative;
+	padding: 0px 15px 0px;
+	font-size: 12px;
+    text-align: center;
     border-right: 1px solid white;
-    top: -9px;
 	
 
 }
@@ -618,9 +729,7 @@ footer p{
 	font-family: "Lucida Sans Unicode", "Lucida Grande", Garuda, sans-serif;
 	font-size: 10px;
 	color: rgb(127, 71, 64);
-	position: absolute;
-    left: 578px;
-    top: 12px;
+    margin: 38px 0px 0px 380px;
 }
 
 
