@@ -55,14 +55,16 @@ img {
 
 /* Body and Wrapper */
 body {
-	background-image: url("../IMG/background.jpg");
+	background-image: url("../IMG/background_slice.jpg");
+	background-repeat: repeat-x;
+	background-size: contain;
 }
 .wrapper {
 	width: 1000px;
-	margin: 0px auto;
+	margin: -10px auto 0px;
 	box-shadow: 0 0 10px #000;
 	overflow: hidden;
-	margin-top: -10px;
+
 }
 
 /*End Body and Wrapper*/
@@ -175,28 +177,40 @@ body {
 	color: white;
 	text-align: left;
 }
+.mainnav .arrow a:hover, .mainnav .partners:hover {
+	background-image: url("../img/arrow.png");
+   	background-repeat: no-repeat;
+	background-position-x: 125px;
+    background-position-y: 13px;
+
+}
 
 .mainnav a:hover, .dropdown:hover, .dropbtn:hover {
     background-color: black;
+
 }
 
 /*End MAIN NAV */
 
 .arrow {
-	background-image: url("../img/arrow.jpg");
+	background-image: url("../img/arrow.png");
    	background-repeat: no-repeat;
-   	background-position: right;
+   	background-position-x: 125px;
+    background-position-y: 13px;
+
 }
 
 .partners {
-	background-image: url("../img/arrow.jpg");
+	background-image: url("../img/arrow.png");
 	background-repeat: no-repeat;
-   	background-position: right;
+	background-position-x: 125px;
+    background-position-y: 13px;
 
 }
 .mainnav li.dropdown {
     display: inline-block;
     position: relative;
+
  
 
 }
