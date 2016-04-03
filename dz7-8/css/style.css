@@ -24,6 +24,11 @@ img {
 	max-width: 100%;
 }
 
+.master_wrap {
+	width: 100%;
+	margin: 0px auto;
+	overflow: hidden;
+}
 
 .stan_p_text { 
 	font-family: open_sans, Verdana, Geneva, "DejaVu Sans", sans-serif;
@@ -56,12 +61,10 @@ img {
 
 body {
 	width: 100%;
-
-}
-
-#wrapper {
 	margin: 0px auto;
+
 }
+
 
 
 #logo_pingbull {
@@ -114,15 +117,74 @@ header {
 }
 
 #head_container {
-	width: 80%;
 	height: 33%;
 	margin: 0% auto;
+}
+/* START OF DROPDOWN NAV FOR SMALL SCREENS */
+
+
+.dropdown_menu {
+	visibility: hidden;
+	display: none;
+	position: absolute;
+	display: inline-block;
+	margin-left: 24%;
+    margin-top: 6%;
+    font-size: 24px;
+	z-index: 10;
 
 }
 
+#dropdown_start {
+	text-decoration: none;
+	padding: 0px 100px;
+
+}
+
+#underline {
+	border-bottom: 2px solid white;
+}
+#dropdown_content {
+	display: none;
+	position: absolute;
+	margin-left: 0%;
+	font-size: 24px;
+	background-color: rgba(60, 47, 68, .7);
+	border-radius: 4px;
+	min-width: 238px;
+	line-height: 38px;
+	text-align: center;
+
+}
+
+#dropdown_content a {
+	display: block;
+	text-decoration: none;
+	color: white;
+    
+}
+
+#dropdown_content a:hover {
+	border-bottom: 2px solid rgb(237, 191, 255);
+	background-color: rgba(60, 47, 68, .9);
+}
+
+
+.dropdown_menu:hover #dropdown_content {
+		display: block;
+}
+
+.dropdown_menu:hover #dropdown_start {
+	background-color: rgba(60, 47, 68, .7);
+	border-radius: 4px;
+
+} 
+
+
+/* END OF DROPDOWN NAV FOR SMALL SCREENS */
 #head_nav {
-	width: 70%;
-	padding-left: 8%;
+	padding-left: 10%;
+
 }
 
 #head_nav ul {
@@ -132,13 +194,17 @@ header {
 
 }
 
+#head_nav li {
+	display: inline;
+}
+
 #head_nav a {
 	font-family: league_gothic, Verdana, Geneva, "DejaVu Sans", sans-serif;
 	color: white;
 	font-size: 24px;
 	text-decoration: none;
 	text-align: center;
-	padding-top: 70px;
+	padding-top: 72px;
 	margin: 0px 1px 0px 50px;
 
 }
@@ -151,9 +217,9 @@ header {
 
 
 #nav_logo {
-	width: 20%;
-	padding-top: 60px;
-	padding-left: 4px;
+	padding-top: 5%;
+	padding-left: 11%;
+	
 }
 
 
@@ -281,6 +347,7 @@ header {
 #recent_updates {
 	width: 100%;
 	margin: 0px auto;
+	padding-bottom: 62px;
 	background-color: rgb(249, 249, 249);
 	
 }
@@ -323,7 +390,7 @@ header {
 }
 
 #slider_buttons2 {
-	padding: 8px 0px 68px 208px;
+	padding: 8px 0px 0px 208px;
 }
 /* "Recent updates" heading is the same  */
 
@@ -403,6 +470,14 @@ header {
 	margin: 0px auto;
 }
 
+#logo_image2 {
+	display: none;
+}
+
+#logo_image3 {
+	display: none;
+}
+
 #logo_image {
 	padding: 16px 0px 20px 94px;
 }
@@ -425,6 +500,9 @@ header {
 
 }
 
+#first_block {
+	padding-bottom: 40px;
+}
 .comments_categories_block {
 	width: 30%;
 	padding: 90px 14px 62px;
@@ -442,9 +520,12 @@ header {
 	font-size: 48px;
 }
 
-#comments_categories_text {
+.comments_categories_text {
+	font-family: open_sans, Verdana, Geneva, "DejaVu Sans", sans-serif;
+	font-size: 16px;
 	color: rgb(120, 120, 120);
 	padding-top: 13px;
+	width: 90%;
 	
 }
 
@@ -466,6 +547,10 @@ header {
 
 #news_categories {
 	font-size: 30px;
+}
+
+#ghost_block {
+	display: none;
 }
 
 /* END COMMENTS AND CATEGORIES */
@@ -508,3 +593,4 @@ footer {
 #sig_shift {
 	font-size: 14px;
 }
+
