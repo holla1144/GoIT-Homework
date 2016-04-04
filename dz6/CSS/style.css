@@ -504,7 +504,7 @@ button[value="search"] {
     padding-bottom: 10px;
 }
 
-button[value="search"]:visited {
+button[value="search"]:hover {
       color: rgba(21, 68, 103, .5);
       border: none;
 
