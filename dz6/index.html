@@ -22,8 +22,8 @@
 
 <!--Login-->
 		<div class="float_left" id="login">
-		<img src="IMG/personicon.jpg" alt="personicon" class="float_left" id="personicon">
-			<form class="float_left">
+		<img src="IMG/personicon2.jpg" alt="personicon" class="float_left" id="personicon">
+			<form class="float_left" method="post">
 				<input type="text" name="login" placeholder="login">
 				<input type="password" name="password" placeholder="password">
 				<input class="no_style" type="submit" value="login">
@@ -83,7 +83,7 @@
 			<p id="tires">Tires:</p>
 		</header>
 		<div class="form_wrap">
-			<form id="form1">
+			<form action="#" id="form1" method="get">
 				<label class="stan_label">Brand:</label>
 					<select name="brand">
 						<option value="empty" selected>....</option>
@@ -121,43 +121,43 @@
 		</div>
 
 		<div class="form_wrap">
-				<form id="form2">
-				<label class="stan_label">Brand:</label>
-					<select name="brand">
-						<option value="empty" selected>....</option>
-						<option value="volvo">Volvo</option>
-				    	<option value="saab">Saab</option>
-				    	<option value="fiat">Fiat</option>
-				    	<option value="audi">Audi</option>
-					</select>
-				<label class="stan_label">Model:<br><span class="small_let">of Car</span></label>
-					<select name="model">
-						<option value="empty" selected>....</option>
-						<option value="volvo">Volvo</option>
-				    	<option value="saab">Saab</option>
-				    	<option value="fiat">Fiat</option>
-				    	<option value="audi">Audi</option>
-					</select>
-				<label class="stan_label">Year:<br><span class="small_let">of Release</span></label>
-					<select name="year">
-						<option value="empty" selected>....</option>
-						<option value="1990">1990</option>
-				    	<option value="1991">1991</option>
-				    	<option value="1992">1992</option>
-				    	<option value="1993">1993</option>
-					</select>
-				<label class="stan_label">Equipment:</label>
-					<select name="equipment">
-						<option value="empty" selected>....</option>
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-					</select>
+				<form action="#" id="form2" method="get">
+						<label class="stan_label">Brand:</label>
+							<select name="brand">
+								<option value="empty" selected>....</option>
+								<option value="volvo">Volvo</option>
+						    	<option value="saab">Saab</option>
+						    	<option value="fiat">Fiat</option>
+						    	<option value="audi">Audi</option>
+							</select>
+						<label class="stan_label">Model:<br><span class="small_let">of Car</span></label>
+							<select name="model">
+								<option value="empty" selected>....</option>
+								<option value="volvo">Volvo</option>
+						    	<option value="saab">Saab</option>
+						    	<option value="fiat">Fiat</option>
+						    	<option value="audi">Audi</option>
+							</select>
+						<label class="stan_label">Year:<br><span class="small_let">of Release</span></label>
+							<select name="year">
+								<option value="empty" selected>....</option>
+								<option value="1990">1990</option>
+						    	<option value="1991">1991</option>
+						    	<option value="1992">1992</option>
+						    	<option value="1993">1993</option>
+							</select>
+						<label class="stan_label">Equipment:</label>
+							<select name="equipment">
+								<option value="empty" selected>....</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+							</select>
 
 			</form>
 		</div>
-	    <button value="search">search...</button>
+	    <button type="submit" form="form1 form2" value="search">search...</button>
 	</div>
 
 	<div class="floatbox float_left two">
@@ -165,7 +165,7 @@
 
 		<div id="size_wrap">
 		
-			<form id="size">
+			<form action="#" id="size" method="get">
 				<label class="stan_label">Size:</label>
 				<select name="size">
 					<option value="145" selected>145</option>
@@ -177,13 +177,13 @@
 			</form>
 		</div>
 		<div id="r_and_seasons">
-			<form id="r">
+			<form action="#" id="r" method="get">
 				<label class="stan_label">R:</label>
 				<select name="r">
 					<option value="12" selected>12</option>
 				</select>
 			</form>
-			<form id="season">
+			<form action="#" id="season" method="get">
 				<label class="stan_label">Season:</label>
 					<label class="stan_label" id="summer"><input type="checkbox" name="season" value="summer">summer</label>
 					<label class="stan_label" id="winter"><input type="checkbox" name="season" value="winter">winter</label>
@@ -193,13 +193,13 @@
 
 		</div>
 
-		<button id="special_button" value="search">search...</button>
+		<button type="submit" form="size r_and_seasons season"id="special_button" value="search">search...</button>
 	</div>
 
 	<div class="floatbox float_left three">
 		<div class="float_left" id="disc_search">
 			<header><p>Search for discs</p></header>
-			<form id="diameter">
+			<form action="#" id="diameter" method="get">
 				<label class="stan_label">Diameter<span class="small_let">of disc</span></label>
 					<select class="disc_search_box" name="diameter">
 						<option value="14" selected>14</option>
@@ -218,7 +218,7 @@
 		</div>
 
 		<div id="DCO">
-			<form id="dco">
+			<form action="#" id="dco" method="get">
 				<label class="stan_label" id="dco_head">DCO<br><span class="small_let">(diameter <br>of central support):</span></label><br>
 					<select class="dco_box" id="dco_select" name="dco">
 						<option value="12" selected>12</option>
@@ -230,7 +230,7 @@
 					</select>
 			</form>
 		</div>
-		<button value="search">search...</button>
+		<button value="search" form="diameter dco">search...</button>
 	</div>
 
 </div>
@@ -271,19 +271,19 @@
 		<h6 class="font" id="brands">Brands</h6>
 
 		<h6 class="font" id="right_tires">Tires</h6>
-			<form class="font" id="tires_form"> 
+			<form action="#" class="font" id="tires_form" method="get"> 
 				<input type="checkbox" name="brand1">Brand 1<br>
 				<input type="checkbox" name="brand2">Brand 2<br>
 				<input type="checkbox" name="brand2">Brand 3
 			</form>
 		<h6 class="font" id="right_discs">Disks</h6>
-			<form class="font" id="discs_form"> 
+			<form action="#" class="font" id="discs_form" method="get"> 
 				<input type="checkbox" name="brand1">Brand 1<br>
 				<input type="checkbox" name="brand2">Brand 2<br>
 				<input type="checkbox" name="brand2">Brand 3
 			</form>
 
-			<button value="submit" class="font" id="right_button">Choose</button>
+			<button value="submit" form="discs_form tires+form"class="font" id="right_button">Choose</button>
 	</aside>
 	<main>
 		<div id="float_boxes"> 
