@@ -1,8 +1,15 @@
 /* BASE CLASSES */
-
-
+#bd_image {
+    background: url("../IMG/homework6.png") no-repeat 0 center;
+    position: absolute;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+}
 
 #wrapper {
+    position: relative;
+    z-index: 1;
 	width: 908px;
 	margin: 0px auto;
 }
@@ -227,7 +234,7 @@ figure {
 	margin-left: 42px;
     background-image: url("../img/shoppingcart.jpg");
     background-size: initial;
-    background-repeat-x: no-repeat;
+    background-repeat: repeat-y;
     background-position: left;
 }
 
