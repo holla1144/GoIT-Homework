@@ -111,7 +111,7 @@ header div#login {
     background: linear-gradient(rgb(31, 102, 133), rgb(17, 66, 102)); /* Standard syntax */
     position: absolute;
     margin: 1px 0px 0px 4px;
-    width: 39%;
+    width: 55%;
     border-radius: 2px;
     box-shadow: 3px 3px rgb(215, 215, 215);
 
@@ -398,6 +398,10 @@ form #size {
     padding-bottom: 10px;
 }
 
+#r {
+    margin:0px 0px 0px -48px;
+}
+
 
 #r select {
     height: 16px;
@@ -427,7 +431,7 @@ form #size {
 }
 
 #special_button {
-    margin-top: -27px;
+    margin-top: -17px;
 }
 /* Disc Search[floatbox3] */
 .three {
@@ -553,13 +557,13 @@ aside{
     width: 143px;
 }   
 
-#tires {
+#tires2 {
     margin-top: 8px;
 
 
 }
 
-#discs {
+#discs2 {
     margin-top: 11px;
 
 }
