@@ -175,6 +175,8 @@ header {
 
 /* END OF DROPDOWN NAV FOR SMALL SCREENS */
 #head_nav {
+	padding-top: 8%;
+    padding-right: 1%;
 
 
 }
@@ -205,6 +207,7 @@ header {
 }
 
 #nav_logo {
+	padding-top: 7%;
 
 
 }
@@ -219,16 +222,17 @@ header {
 #slide_wrap_content {
     width: 80%;
     margin: 0% auto;
+    overflow: visible;
 }
 
 #slide_text_container {
     width: 50%;
-    padding: 70px 0px 0px 20px;
+    padding: 70px 0px 0px 15px;
 }
 
 #iphone_image {
-    width: 30%;
-    margin-top: -20px;
+ 
+    margin: -20px 0px 0px 32px;
     padding-left: 100px;
 }
 
@@ -253,7 +257,7 @@ header {
 /* END SlIDER */
 
 #buttons {
-    padding: 96px 338px 0px 0px;
+    padding: 96px 316px 0px 0px;
 }
 
 /* END HEADER */
@@ -416,6 +420,7 @@ header {
 .bullet {
     background: url(../img/button.png) no-repeat 18px 14px;
     padding: 14px 0 0 78px;
+    min-height: 61px;
 }
 
 .bullet p {
@@ -447,7 +452,7 @@ header {
 }
 
 #logo_wrapper {
-    width: 80%;
+    width: 100%;
     margin: 0px auto;
 }
 
@@ -460,7 +465,7 @@ header {
 }
 
 #logo_image {
-    padding: 16px 0px 20px 94px;
+    padding: 16px 0px 20px 70px;
 }
 
 /* END LOGO LAYER*/
@@ -553,9 +558,13 @@ footer {
 }
 
 #foot_wrapper {
-    width: 80%;
     margin: 0px auto;
     overflow: hidden;
+}
+
+#main_foot_nav {
+	overflow: hidden;
+	margin: -3px 0px 0px -18px;
 }
 
 .foot_nav {
