@@ -22,7 +22,7 @@ function pow(number, step) { // defines the function 'pow'
 		for(i = 0; i < step - 1; i++) {
 			number *= initialNumber;
 		}
-		console.log('The answer is: ' + number);
+		alert('The answer is: ' + number);
 	};
 };
 
@@ -34,57 +34,26 @@ alert('Assignment number 2 will now begin');
 
 //This is the section that asks users to enter a series of names
 
-var name1 = prompt('Please enter a name');
+var nameArray = []
 
-var name2 = prompt('Please enter another name');
-
-var name3 = prompt('Please enter another name');
-
-var name4 = prompt('Please enter another name');
-
-var name5 = prompt('Please enter one last name');
-
-
-var nameArray = [] //This creates an array where the names will be pushed
-
-//Each name will be converted to lower case to ensure we get a match, then pushed to our nameArray
-
-
-name1 = name1.toLowerCase(); 
-
-nameArray.push(name1);
-
-name2 = name2.toLowerCase(); 
-
-nameArray.push(name2);
-
-name3 = name3.toLowerCase(); 
-
-nameArray.push(name3);
-
-name4 = name4.toLowerCase(); 
-
-nameArray.push(name4);
-
-name5 = name5.toLowerCase(); 
-
-nameArray.push(name5);
+function fillArray() {
+	for (i = 0; i < 5; i ++) {
+		nameArray.push(prompt('please enter a name').toLowerCase());
+	};
+};
 
 
 
-var userName = prompt('Howdy Partner. Please enter your name here'); //Prompt user to enter his/her name
-
-userName = userName.toLowerCase(); //Convert userName to lowerCase
-
-function nameCheck (nameArray, userName) {
-	//var match = undefined; 
+function nameCheck (nameArray) {
+	var userName = prompt('Howdy Partner. Please enter your name here'); //Prompt user to enter his/her name
+	var lowUserName = userName.toLowerCase(); //alias variable allows us to compare lower-case names with other lower-case names
 	/*This function cycles through all the names in our nameArray. 
 	If one of them matches the username, an alert is sent to the user
 	to let them know their name has been found */
 
 	var match = undefined; //defines the variable match, which will be used to trigger welcome message.
 	for (i = 0; i < nameArray.length; i++) {
-		if (nameArray[i] === userName) {
+		if (nameArray[i] === lowUserName) {
 			match = true; //sets variable match to True if userName matches an object in the nameArray
 		};
 	};
@@ -97,6 +66,9 @@ function nameCheck (nameArray, userName) {
 
 };
 
-nameCheck(nameArray, userName); //execute the nameCheck function
+fillArray(); //execute fillArray function
+
+nameCheck(nameArray); //execute the nameCheck function
 
 alert('Thanks for playing!')
+
