@@ -85,33 +85,33 @@
 				</header>
 
 				<form action="#" id="form1" method="get">
-					<div class="form_wrap">
-						<label class="stan_label">Brand:</label>
-						<select name="brand">
+					<div class="form_wrap float_right" id="wrap1">
+						<label class="stan_label" for="brand2">Brand:</label>
+						<select name="brand2" id="brand2">
 							<option value="empty" selected>....</option>
 							<option value="volvo">Volvo</option>
 							<option value="saab">Saab</option>
 							<option value="fiat">Fiat</option>
 							<option value="audi">Audi</option>
 						</select>
-						<label class="stan_label">Model:<br><span class="small_let">of Car</span></label>
-						<select name="model">
+						<label class="stan_label" for="model2">Model:<br><span class="small_let">of Car</span></label>
+						<select name="model2" id="model2">
 							<option value="empty" selected>....</option>
 							<option value="volvo">Volvo</option>
 							<option value="saab">Saab</option>
 							<option value="fiat">Fiat</option>
 							<option value="audi">Audi</option>
 						</select>
-						<label class="stan_label">Year:<br><span class="small_let">of Release</span></label>
-						<select name="year">
+						<label class="stan_label" for="year2">Year:<br><span class="small_let">of Release</span></label>
+						<select name="year2" id="year2">
 							<option value="empty" selected>....</option>
 							<option value="1990">1990</option>
 							<option value="1991">1991</option>
 							<option value="1992">1992</option>
 							<option value="1993">1993</option>
 						</select>
-						<label class="stan_label">Equipment:</label>
-						<select name="equipment">
+						<label class="stan_label" for="equipment2">Equipment:</label>
+						<select name="equipment2" id="equipment2">
 							<option value="empty" selected>....</option>
 							<option value="1">1</option>
 							<option value="2">2</option>
@@ -121,7 +121,7 @@
 
 					</div>
 
-					<div class="form_wrap">
+					<div class="form_wrap float_left" id=wrap2>
 						<div id="form2">
 							<label class="stan_label" for="brand">Brand:</label>
 							<select name="brand" id="brand">
@@ -131,24 +131,24 @@
 								<option value="fiat">Fiat</option>
 								<option value="audi">Audi</option>
 							</select>
-							<label class="stan_label">Model:<br><span class="small_let">of Car</span></label>
-							<select name="model">
+							<label class="stan_label" for="model">Model:<br><span class="small_let">of Car</span></label>
+							<select name="model" id="model">
 								<option value="empty" selected>....</option>
 								<option value="volvo">Volvo</option>
 								<option value="saab">Saab</option>
 								<option value="fiat">Fiat</option>
 								<option value="audi">Audi</option>
 							</select>
-							<label class="stan_label">Year:<br><span class="small_let">of Release</span></label>
-							<select name="year">
+							<label class="stan_label" for="year">Year:<br><span class="small_let">of Release</span></label>
+							<select name="year" id="year">
 								<option value="empty" selected>....</option>
 								<option value="1990">1990</option>
 								<option value="1991">1991</option>
 								<option value="1992">1992</option>
 								<option value="1993">1993</option>
 							</select>
-							<label class="stan_label">Equipment:</label>
-							<select name="equipment">
+							<label class="stan_label" for="equipment">Equipment:</label>
+							<select name="equipment" id="equipment">
 								<option value="empty" selected>....</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
@@ -159,10 +159,11 @@
 
 						</div>
 
-
+						<button type="submit" class="float_right" id="box1_button" form="form1" value="search">search...</button>
 					</div>
+
+
 				</form>
-				<button type="submit" form="form1" value="search">search...</button>
 
 
 			</div>
@@ -173,8 +174,8 @@
 
 				<form action="#" id="size" method="get">
 					<div id="size_wrap">
-						<label class="stan_label">Size:</label>
-						<select name="size">
+						<label class="stan_label" for="size1">Size:</label>
+						<select name="size1" id="size1">
 							<option value="145" selected>145</option>
 						</select>
 
@@ -185,8 +186,8 @@
 					</div>
 					<div id="r_and_seasons">
 						<div id="r">
-							<label class="stan_label">R:</label>
-							<select name="r">
+							<label class="stan_label" for="r1">R:</label>
+							<select name="r1" id="r1">
 								<option value="12" selected>12</option>
 							</select>
 						</div>
@@ -201,30 +202,32 @@
 				</form>
 				<button type="submit" form="size" id="special_button" value="search">search...</button>
 			</div>
-		</div>
+		
 
-		<div class="floatbox float_left three">
+			
 
-			<header><p>Search for discs</p></header>
-			<form action="#" id="diameter" method="get">
+				<div class="floatbox float_left three">
+				<form action="#" id="diameter" method="get">
+
+				<header><p id="three_head">Search for discs</p></header>
 				<div class="float_left" id="disc_search">
-					<label class="stan_label">Diameter<span class="small_let">of disc</span></label>
-					<select class="disc_search_box" name="diameter">
+					<label class="stan_label" for="diameter1">Diameter<span class="small_let">of disc</span></label>
+					<select class="disc_search_box" name="diameter1" id="diameter1">
 						<option value="14" selected>14</option>
 					</select>
 					<br>
-					<label class="stan_label">Number<br><span class="small_let">of supports:</span></label>
-					<select class="disc_search_box" name="num_support_holes">
+					<label class="stan_label" for="num_support_holes">Number<br><span class="small_let">of supports:</span></label>
+					<select class="disc_search_box" name="num_support_holes" id="num_support_holes">
 						<option value="3" selected>3</option>
 					</select><br>
-					<label class="stan_label">Diameter<br><span class="small_let">of supports:</span></label>
-					<select class="disc_search_box" name="diam_support_holes">
+					<label class="stan_label" for="diam_support_holes">Diameter<br><span class="small_let">of supports:</span></label>
+					<select class="disc_search_box" name="diam_support_holes" id="diam_support_holes">
 						<option value="12" selected>12</option>
 					</select>
 
 				</div>
 
-				<div id="DCO">
+				<div>
 					<div id="dco">
 						<label class="stan_label" id="dco_head">DCO<br><span class="small_let">(diameter <br>of central support):</span></label><br>
 						<select class="dco_box" id="dco_select" name="dco">
@@ -241,7 +244,7 @@
 			</form>
 			<button value="search" form="diameter">search...</button>
 		</div>
-
+		</div>
 	</div>
 	<!--END OF FLOATING BOXED-->
 	<!--SectionCatalogProducts[Aside]-->
@@ -397,7 +400,6 @@
 	<p id="copyright">Site Created by &copy; Global Vision</p>
 </footer>
 
-</div>
 
 </body> 
 
