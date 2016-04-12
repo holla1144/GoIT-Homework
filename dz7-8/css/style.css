@@ -8,49 +8,21 @@
 /* base classes */
 
 @font-face {
-    font-family: 'league_gothic';
-    src: url('../fonts/leaguegothic-regular-webfont.eot');
-    src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
-    url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
-    url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
-    url('../fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+    font-family: league_gothic;
+    src: url("../fonts/LeagueGothic-Regular.otf");
 }
-
-
-
 
 @font-face {
-    font-family: 'open_sans';
-    src: url('../fonts/opensans-regular-webfont.eot');
-    src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
-    url('../fonts/opensans-regular-webfont.woff') format('woff'),
-    url('../fonts/opensans-regular-webfont.ttf') format('truetype'),
-    url('../fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+    font-family: open_sans;
+    src: url("../fonts/OpenSans-Regular.ttf");
 }
-
-
-
 
 @font-face {
-    font-family: 'open_sansbold';
-    src: url('../fonts/opensans-bold-webfont.eot');
-    src: url('../fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
-    url('../fonts/opensans-bold-webfont.woff') format('woff'),
-    url('../fonts/opensans-bold-webfont.ttf') format('truetype'),
-    url('../fonts/opensans-bold-webfont.svg#open_sansbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
+    font-family: open_sans;
+    src: url("../fonts/OpenSans-Bold.ttf");
+    font-weight: bold;
 }
+
 img {
     max-width: 100%;
 }
@@ -203,6 +175,8 @@ header {
 
 /* END OF DROPDOWN NAV FOR SMALL SCREENS */
 #head_nav {
+	padding-top: 8%;
+    padding-right: 1%;
 
 
 }
@@ -233,6 +207,7 @@ header {
 }
 
 #nav_logo {
+	padding-top: 7%;
 
 
 }
@@ -247,16 +222,17 @@ header {
 #slide_wrap_content {
     width: 80%;
     margin: 0% auto;
+    overflow: visible;
 }
 
 #slide_text_container {
     width: 50%;
-    padding: 70px 0px 0px 20px;
+    padding: 70px 0px 0px 15px;
 }
 
 #iphone_image {
-    width: 30%;
-    margin-top: -20px;
+ 
+    margin: -20px 0px 0px 32px;
     padding-left: 100px;
 }
 
@@ -281,7 +257,7 @@ header {
 /* END SlIDER */
 
 #buttons {
-    padding: 96px 338px 0px 0px;
+    padding: 96px 316px 0px 0px;
 }
 
 /* END HEADER */
@@ -444,6 +420,7 @@ header {
 .bullet {
     background: url(../img/button.png) no-repeat 18px 14px;
     padding: 14px 0 0 78px;
+    min-height: 61px;
 }
 
 .bullet p {
@@ -475,7 +452,7 @@ header {
 }
 
 #logo_wrapper {
-    width: 80%;
+    width: 100%;
     margin: 0px auto;
 }
 
@@ -488,7 +465,7 @@ header {
 }
 
 #logo_image {
-    padding: 16px 0px 20px 94px;
+    padding: 16px 0px 20px 70px;
 }
 
 /* END LOGO LAYER*/
@@ -581,9 +558,13 @@ footer {
 }
 
 #foot_wrapper {
-    width: 80%;
     margin: 0px auto;
     overflow: hidden;
+}
+
+#main_foot_nav {
+	overflow: hidden;
+	margin: -3px 0px 0px -18px;
 }
 
 .foot_nav {
