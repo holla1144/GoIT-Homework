@@ -1,0 +1,30 @@
+h3 {
+	font-family: verdana;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+
+.checkbox_list {
+	font-family: verdana;
+	font-size: 18px;
+	list-style-type: none;
+
+}
+
+#submitButton {
+    height: 60px;
+    width: 380px;
+    background-color: lightblue;
+    border: 2px solid black;
+    margin-left: 300px;
+    font-family: verdana;
+    font-size: 16px;
+}
+
+#pageHeader {
+	font-family: verdana;
+	font-size: 30px;
+	margin: 0px auto;
+	margin-left: 300px;
+}
