@@ -29,7 +29,7 @@ var body = d.getElementsByTagName('body')[0],
 	getQuestion: function(n, target) {
 		var list = "";
 		for (var i = 0; i < this.answers.length; i++) {
-			list += '<li class="checkbox_list"><input type = "checkbox">' + this.answers[i].text + " " + (i + 1) + '</li>'
+			list += '<li class="checkbox_list"><input type="checkbox" name="question[' + n + '][' + i + ']">' + this.answers[i].text + " " + (i + 1) + '</li>'
 		}
 
 	return '<h3 class="questionHeader">' + n + "." + " " + this.text + " " + n + '</h3><ul>' + list + '</ul>';
