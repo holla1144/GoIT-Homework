@@ -1,0 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#wrapper {
+	width: 100%; 
+	max-width: 960px;
+	margin: 0px auto;
+}
+
+#content_box {
+	border: 1px solid gray;
+	min-height: 300px;
+	overflow: auto;
+}
+
+#form_box {
+	border: 1px solid gray;
+	min-height:150px;
+}
+
+#first_form {
+	padding: 20px;
+}
+
+.field_container {
+	margin: 7px 0;
+	position: relative;
+}
+
+#address {
+	margin-left: 15px;
+}
+
+.tool_tip {
+	color: gray;
+	border: 1px solid gray;	
+	border-radius: 3px;
+	display:none;
+	padding:3px;
+	position:absolute;
+	top: -2px;
+	left: 255px;
+}
+
