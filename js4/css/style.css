@@ -16,7 +16,9 @@ body {
 }
 
 #content_box {
-	border: 1px solid gray;
+	border-top: 1px solid gray;
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
 	min-height: 300px;
 	overflow: auto;
 }
@@ -37,6 +39,10 @@ body {
 
 #address {
 	margin-left: 15px;
+}
+
+#tt_add {
+	width: 196px;
 }
 
 .tool_tip {
