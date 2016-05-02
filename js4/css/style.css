@@ -37,8 +37,12 @@ body {
 	position: relative;
 }
 
+#last_name {
+	margin-left: 1px;
+}
+
 #address {
-	margin-left: 15px;
+	margin-left: 16px;
 }
 
 #tt_add {
