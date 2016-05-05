@@ -59,4 +59,12 @@ body {
 	top: -2px;
 	left: 255px;
 }
-
+.tool_tip.visible {
+	display: block;
+}
+.tab-content {
+	display: none;
+}
+.tab-content.showed {
+	display: block;
+}
