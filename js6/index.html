@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>Carousel and Profile</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script  src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>  
+	<script src="js/template.js"></script>
+	<script rel="text/javascript" src="js/slider.js"></script>
+	<script rel="text/javascript" src="js/script.js"></script>
+
+</head>
+<body>
+	<div id="wrapper">
+	<script type="text/template" id="head">
+		<h1><%= header %></h1>
+	</script>
+
+	<script type="text/template" id="test">
+		<% for (var i = 0; i < data.length; i++) { %>
+			<h3><%= data[i].title %></h3>
+			<p><%= data[i].artist %></p>
+		<% }; %>
+
+
+
+	</script>
+
+
+	<div id="carousel-wrapper">
+		<div class="carousel-arrow-left"><span>Left</span></div>
+			<div class="carousel-hider">
+				<ul class="carousel-list">
+					<li class="carousel-element"><img src="img/darkside.png" alt="darkside"></li>
+					<li class="carousel-element"><img src="img/hard_days_night.png" alt="hard day's night"></li>
+					<li class="carousel-element"><img src="img/highway_to_hell.png" alt="highway to hell"></li>
+					<li class="carousel-element"><img src="img/mf_doom.png" alt="mf doom"></li>
+					<li class="carousel-element"><img src="img/sticky_fingers.png" alt="sticky fingers"></li>
+					<li class="carousel-element"><img src="img/two_heads.png" alt="two heads"></li>
+				</ul>
+			</div>
+		<div class="carousel-arrow-right"><span>Right</span></div>
+	</div>
+
+
+
+
+
+
+	</div>
+</body>
