@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href = "css/style.css">
+	<link rel="stylesheet" href = "slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+	<link rel="stylesheet" href="css/selectric.css">
+	<link rel="stylesheet" href="icheck/skins/flat/red.css">
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+	<script rel="text/javascipt" src= "js/script.js"></script>
+	
+	<title>RedFish/BlueFish</title>
+</head> 
+
+<body>
+	<div id="wrapper">
+		<section id="header">
+			<h3><span id="logored">Red</span>FISH <span id="logoblue">Blue</span>FISH</h3>
+
+		</section> 
+
+		<nav>
+			<ul>
+				<li><a href="#">Nav 1</a></li>
+				<li><a href="#">Nav 2</a></li>
+				<li class="dropdown"> 
+					<a href="#">Nav 3</a>
+					<ul class="sub-menu">
+						<a href="#">3.1</a>
+						<a href="#">3.2</a>
+						<a href="#">3.3</a>
+						<li class="dropdown">
+							<a href="#">3.4</a>
+							<ul class="sub-menu">
+								<li><a href="#">3.4.1</a></li>
+								<li class="dropdown">
+									<a href="#">3.4.2</a>
+									<ul class="sub-menu">
+										<li><a href="#">3.4.2.1</a></li>
+									</ul>
+									<a href="#">3.4.3</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#">Nav 4</a></li>
+
+		<!--dropdown menu will go here-->
+			</ul>
+		</nav>
+		
+		<div class="clearfix" id="carousel">
+			<section class="single-item">
+				<div><img src="img/fish1.jpg" alt="fish1"></div>
+				<div><img src="img/fish2.jpg" alt="fish2"></div>
+				<div><img src="img/fish3.jpg" alt="fish3"></div>
+			</section>
+		</div>	
+		<section id="formBox">
+			<form action="#" method="post">
+				<fieldset>
+					<label class="f_left">I'm interested in:</label>
+						<div id="selectfish">
+							<select name="fish">
+								<option value="baikal">Baikal Oilfish</option>
+								<option value="bighead">Bighead Carp</option>
+								<option value="dab">Dab</option>
+								<option value="elephant">Elephant Fish</option>
+								<option value="flagfish">Flagfish</option>
+								<option value="ghost">Ghost Shark</option>
+							</select>
+						</div>
+						<div class="f_left" id="send_updates">
+							<p>Send me updates on the fish of my interest:</p>
+							<input class="icheck_red" type="checkbox" name="updates" value="yes">Yes<br>
+							<input class="icheck_red" type="checkbox" name="updates" value="no">No
+						</div>
+						<div class="f_left" id="enter_me">
+							<p>Enter me to win sweet fish merchandise:</p>
+								<div class="f_right">
+									<label class="label_1" for="enter_yes">Yes</label>
+									<input class="custom" id="enter_yes" type="checkbox" name="enter" value="yes">
+									<label for="enter_yes"><span></span></label>
+								</div>
+								<br>
+								<div class="f_right clear_both clearfix" id="lower_dali">
+									<label class="label_1" for="enter_no">No</label>
+									<input class="custom" id="enter_no" type="checkbox" name="enter" value="no">
+									<label for="enter_no"><span></span></label>
+								</div>
+						</div>
+						<div class="f_right clear_both" id="submit_holder">
+							<input type="submit" value="submit">
+						</div>
+				</fieldset>
+
+			</form>
+		</section>
+		<section class="section" id="search">
+			<form action="#" method="GET">
+				<label for="fish">Search fish pics:</label>
+				<input id="userFish" type="text" name="fish">
+				<button id="submit" type="button">Go Fish</button>
+
+
+			</form>
+
+		</section>
+
+
+
+
+
+	</div><!--close of body-->
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="icheck/icheck.js"></script>
+<script type="text/javascript" src="js/jquery.selectric.min.js"></script>
+</body>

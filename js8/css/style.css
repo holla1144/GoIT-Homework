@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+* {
+
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+
+}
+
+
+
+.f_right {
+	float: right;
+}
+
+.f_left {
+	float: left;
+}
+
+.clear_both {
+	clear: both;
+}
+
+.clearfix:after {
+    height: 0;
+    width: 100%;
+    clear: both;
+    content: '';
+    display: block;
+}
+
+body {
+	width: 100%;
+	margin: 0px auto;
+	font-family: 'montserratregular', verdana;
+	background: rgba(244, 244, 244, 1);
+
+}
+
+
+#wrapper {
+	width: 100%;
+	max-width: 960px;
+	margin: 0px auto;
+	
+
+}
+
+#header {
+	font-size: 50px;
+}
+
+#logored {
+	color: rgb(211, 76, 91);
+
+}
+
+#logoblue {
+	color: rgb(9, 12, 155);
+}
+nav {
+	background-color: rgb(208, 225, 212);
+	overflow: visible;
+
+}
+
+nav ul {
+	list-style-type: none;
+
+}
+
+nav ul li {
+	display: inline-block;
+	position: relative;
+}
+
+nav a {
+	line-height: 40px;
+	padding: 0px 10px;
+	text-decoration: none;
+	display: block;
+	color: black;
+
+}
+
+nav li ul {
+	position: absolute;
+	width: 200px;
+	
+}
+
+nav li li {
+	position: relative;
+	display: block;
+	overflow: visible;
+
+}
+
+nav li li ul {
+	position: absolute;
+	left: 200px;
+	top: 0px;
+
+	
+}
+
+nav a:hover, 
+nav a:focus, 
+nav a:active {
+	color: rgb(50, 50, 50);
+}
+
+nav li li li a{
+    width: 200px;
+   	border-bottom: 1px solid black;
+}
+nav li li:last-child a {
+    border-bottom:none;
+}
+
+ul.sub-menu {
+	display: none;
+	z-index: 1000;
+	background: rgba(208, 225, 212, .8);
+
+}
+
+
+
+#carousel {
+	background-color: black;
+
+
+}
+
+.single-item img{
+	margin: 0px auto;
+
+
+
+}
+
+#formBox {
+	margin-top:10px;
+	
+}
+
+#selectfish {
+	padding-top: 30px;
+
+	}
+
+#send_updates {
+	width: 50%;
+}
+
+#enter_me {
+
+}
+
+.label_1 {
+	padding-bottom: 10px;
+}
+.custom {
+	display: none;
+
+}
+
+.custom + label span {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border: 1px solid gray;
+	background: url('../img/dali_check.png') 0px top no-repeat;
+}
+
+.custom:checked + label span {
+	background: url('../img/dali_check.png') -55px top no-repeat;
+}
+
+#submit_holder {
+	margin-top: -200px;
+	height: 100%;
+}
+
+
+input[type="submit"] {
+	border: none;
+	height: 200px;
+	width: 50px;
+	background-color: rgb(97, 201, 168);
+}
+
+#submit {
+	border: none;
+	height: 21px;
+	width: 155px;
+	background-color: rgb(97, 201, 168);
+	margin: 5px 0px 0px 5px;
+
+
+}
+
+#search {
+	margin-bottom: 100px;
+}
+
+.imageDiv {
+	margin: 4px;
+	float: left;
+	width: 30%;
+	height: 200px;
+}
