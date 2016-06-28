@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>To Do</title>
+<!--<script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
+//<script type="text/javascript" src="scripts/template.js"></script>
+<script type="text/javascript" src="scripts/script.js"></script> -->
+<!-- <script data-main="js/app.js" src="js/require.js"></script> -->
+<script data-main="js/app.js" src="js/require.js"></script>
+
+
+</head>
+<body>
+	<script type="text/template" id="wrapper-template">
+	<div class="wrapper">
+		<ul class="item-list"></ul>
+	</div>
+	<div class="controls">
+		<input type="text" class="item-value">
+		<button class="item-add">Add</button>
+		</div>
+	</div>
+	</script>
+
+<script type="text/template" id="list-template">
+	<% for (var i = 0; i < data.length; i++) { %>
+
+	
+		<li><%= data[i] %> <span data-value="<%= data[i] %>" class="item-delete">x</span></li>
+
+	<% }; %>
+</script>
+
+
+
+</body>
+</html>
