@@ -1,7 +1,7 @@
 requirejs.config({
 		paths: {
 
-			'jquery': 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery'
+			'jquery': 'https://code.jquery.com/jquery-2.2.4'
 
 		},
 
@@ -28,17 +28,15 @@ require(
 
 	],
 
-	function (Model, View, Controller, $) {
+	function (Model, View, Controller, $, template) {
 		
-		$( function () {
-
 			var firstToDoList = ['learn Javascript', 'learn html', 'make coffee'];
 			var model = new Model(firstToDoList);
 			var view = new View(model);
 			var controller = new Controller(model, view);
+	
 
-			});
-				
+		
 
 	}
 

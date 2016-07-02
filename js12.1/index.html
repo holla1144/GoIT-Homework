@@ -9,31 +9,31 @@
 <script type="text/javascript" src="scripts/script.js"></script> -->
 <!-- <script data-main="js/app.js" src="js/require.js"></script> -->
 <script data-main="js/app.js" src="js/require.js"></script>
-
+<link rel="stylesheet" href="css/style.css"></link>
 
 </head>
 <body>
-	<script type="text/template" id="wrapper-template">
-	<div class="wrapper">
-		<ul class="item-list"></ul>
-	</div>
-	<div class="controls">
-		<input type="text" class="item-value">
-		<button class="item-add">Add</button>
-		</div>
-	</div>
-	</script>
-
-<script type="text/template" id="list-template">
-	<% for (var i = 0; i < data.length; i++) { %>
-
+	<header class=wrapper><h6 id="title">What's To Do?</h6></header>
 	
-		<li><%= data[i] %> <span data-value="<%= data[i] %>" class="item-delete">x</span></li>
+		<script type="text/template" id="wrapper-template">
+		<div class="wrapper">
+			<ul class="item-list"></ul>
+		</div>
+		<div class="controls wrapper">
+			<input type="text" class="item-value" value="">
+			<button class="item-add">Add</button>
+			</div>
+		</div>
+		</script>
 
-	<% }; %>
-</script>
+	<script type="text/template" id="list-template">
+		<% for (var i = 0; i < data.length; i++) { %>
 
+		
+			<li><%= data[i] %> <span class="edit">Edit</span><span data-value="<%= data[i] %>" data-position="<%= i %>" class="item-delete">x</span></li>
 
-
+		<% }; %>
+	</script>
+	
 </body>
 </html>

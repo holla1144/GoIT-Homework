@@ -16,7 +16,7 @@ define(
 				self.elements = {
 					input: $('.item-value'),
 					addBtn: $('.item-add'),
-					listContainer: $('.item-list')
+					listContainer: $('.item-list'),
 
 				};
 
