@@ -35,7 +35,7 @@ jQuery(document).ready(function() {
 	 	e.preventDefault();
  		var searchTerm = $('#partner-search').val();
  		var API_KEY = '81d9e694fa94443eca77a3df318509ab';
-		var URL = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=' + API_KEY + '&tags=' + searchTerm + '&extras=url_m&format=json&jsoncallback=?';
+		var URL = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=' + API_KEY + '&tags=' + searchTerm + '&per_page=1000&extras=url_m&format=json&jsoncallback=?';
 		$.getJSON(URL, function(results){
 
 						var randset = [];
@@ -66,7 +66,7 @@ jQuery(document).ready(function() {
 
 
  		var API_KEY = '81d9e694fa94443eca77a3df318509ab';
-		var URL = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=' + API_KEY + '&tags=' + 'adventure' + '&extras=url_m&format=json&jsoncallback=?';
+		var URL = 'https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=' + API_KEY + '&tags=' + 'adventure' + '&per_page=100&extras=url_m&format=json&jsoncallback=?';
 		$.getJSON(URL, function(results){
 
 						var randset = [];
